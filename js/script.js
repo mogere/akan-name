@@ -20,6 +20,8 @@ function calculateDay(){
 }
 
 function display(){
+    var boysNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku","Yaw", "Kofi", "Kwame"];
+    var girlsNames = ["Akosua", "KAdwoa", "Abenaa", "Akua","Yaa", "Afua", "Ama"];
     if (dayIndex === 0)
     alert("Sunday");
 
