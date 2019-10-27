@@ -4,6 +4,9 @@ var girlsNames = ["Akosua", "Adwoa", "Abenaa", "Akua","Yaa", "Afua", "Ama"];
 
 function calculateDay(){
     var date = document.getElementById("birthdate").value;
+    if (date == "") {
+        alert("Date must be filled out");
+    }
     var dt = new Date(date);
     dayIndex = dt.getDay();
     display(); 
@@ -12,6 +15,7 @@ function calculateDay(){
 function display(){
     var checkedValue = null;
     gender = document.getElementsByName("gender");
+   // if (!gender) alert("Must check some option!");
         for(var i=0; gender[i]; ++i){
             if(gender[i].checked){
                  checkedValue = gender[i].value;
@@ -24,7 +28,7 @@ function display(){
     {
         var akan = boysNames[0];
         alert(akan);
-        document.getElementById("akan").value = lname + boysNames[0];
+        document.getElementById("akan").value = akan;
     }
     else if (dayIndex === 1 && checkedValue === "male"){
         var akan = boysNames[1];
