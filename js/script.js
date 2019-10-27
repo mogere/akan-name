@@ -15,20 +15,22 @@ function calculateDay(){
 function display(){
     var checkedValue = null;
     gender = document.getElementsByName("gender");
-   // if (!gender) alert("Must check some option!");
         for(var i=0; gender[i]; ++i){
             if(gender[i].checked){
-                 checkedValue = gender[i].value;
-            break;
+                 checkedValue = gender[i].value;  
             }
+            else {
+                alert("Please enter your gender");
         }
+        break;
+    }
    
-        
+
     if (dayIndex === 0 && checkedValue === "male")
     {
         var akan = boysNames[0];
         alert(akan);
-        document.getElementById("akan").value = akan;
+        document.getElementById("akan").innerHTML= akan;
     }
     else if (dayIndex === 1 && checkedValue === "male"){
         var akan = boysNames[1];
