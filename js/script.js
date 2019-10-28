@@ -16,17 +16,16 @@ function display(){
     var checkedValue = null;
     gender = document.getElementsByName("gender");
 
-        for(var i=0; gender[i]; ++i){
-            if(gender[i].checked){
-                if(gender[i].value ==="male")
+        for(var i=0; gender[i]; i++){
+            
+             if(gender[i].checked){
+                if (gender[i].value ==="male")
                     alert(boysNames[dayIndex]);   
                 else if (gender[i].value ==="female")
                     alert(girlsNames[dayIndex]);                             
-                else if (gender[i].value ==="")
-                    alert("Please enter your gender")
             }
-           
-        }
+            else 
+            alert("Please enter your gender");        
 
     }
-
+}
