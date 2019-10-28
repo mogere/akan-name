@@ -19,13 +19,14 @@ function display(){
         for(var i=0; gender[i]; ++i){
             if(gender[i].checked){
                 if(gender[i].value ==="male")
-                    alert(boysNames[dayIndex]);
+                    alert(boysNames[dayIndex]);   
                 else if (gender[i].value ==="female")
-                    alert(girlsNames[dayIndex]);          
-                else 
-                alert("Please enter your gender");
-    }
-}
+                    alert(girlsNames[dayIndex]);                             
+                else if (gender[i].value ==="")
+                    alert("Please enter your gender")
+            }
+           
+        }
 
-}
+    }
 
